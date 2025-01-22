@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Presupuestos de Limpieza</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Presupuestos de Limpieza</h1>
+        <form id="quoteForm">
+            <label for="quoteNumber">Número de Presupuesto:</label>
+            <input type="text" id="quoteNumber" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" required>
+
+            <label for="clientName">Nombre del Cliente:</label>
+            <input type="text" id="clientName" required>
+
+            <label for="clientAddress">Dirección del Cliente:</label>
+            <input type="text" id="clientAddress" required>
+
+            <label for="services">Servicios:</label>
+            <textarea id="services" rows="5" required></textarea>
+
+            <label for="price">Precio Mensual (€):</label>
+            <input type="number" id="price" step="0.01" required>
+
+            <button type="submit">Generar Presupuesto</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
+
